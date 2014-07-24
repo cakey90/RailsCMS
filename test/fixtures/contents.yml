@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  channleID: 1
+  channelName: MyString
+  title: MyString
+  subtitle: 
+  imageSrc: MyText
+  tags: MyString
+  description: MyText
+  addtime: 2014-07-24
+  hits: 1
+  author: MyString
+  source: MyString
+  linkUrl: MyText
+  content: MyText
+  fileSrc: MyText
+  videoSrc: MyText
+  ifhot: 1
+  ifrecommend: 1
+  iftop: 1
+  sort: 1
+  status: 1
+
+two:
+  channleID: 1
+  channelName: MyString
+  title: MyString
+  subtitle: 
+  imageSrc: MyText
+  tags: MyString
+  description: MyText
+  addtime: 2014-07-24
+  hits: 1
+  author: MyString
+  source: MyString
+  linkUrl: MyText
+  content: MyText
+  fileSrc: MyText
+  videoSrc: MyText
+  ifhot: 1
+  ifrecommend: 1
+  iftop: 1
+  sort: 1
+  status: 1

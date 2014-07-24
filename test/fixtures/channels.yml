@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  channelName: MyString
+  fid: 
+  sort: 
+  url: MyString
+  imageSrc: MyText
+  fileSrc: MyText
+  videoSrc: MyText
+  hits: 
+  content: MyText
+  tags: MyString
+  description: MyText
+  addtime: 2014-07-23
+  group: MyString
+  status: 
+
+two:
+  channelName: MyString
+  fid: 
+  sort: 
+  url: MyString
+  imageSrc: MyText
+  fileSrc: MyText
+  videoSrc: MyText
+  hits: 
+  content: MyText
+  tags: MyString
+  description: MyText
+  addtime: 2014-07-23
+  group: MyString
+  status: 
