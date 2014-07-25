@@ -363,18 +363,28 @@
 								<b class="arrow icon-angle-down"></b>
 								<% end %>
 							</a>
-							<% if p[:childrens].length>0 %>
-							<ul class="submenu">
-							<% p[:childrens].each_with_index do |c,j| %>
-								<li>
-									<a href="<%= c[:data].linkUrl %>">
-										<i class="icon-double-angle-right"></i>
-										<%= c[:data].pageName %>
-									</a>
-								</li>
+							<% def eachChildrens(p)%>
+								<ul class="submenu">
+									<% p[:childrens].each_with_index do |c,j| %>
+										<li>
+											<a href="<%= c[:data].linkUrl %>" <%= c[:childrens].length>0?'class="dropdown-toggle"':'' %>>
+												<i class="icon-double-angle-right"></i>
+												<%= c[:data].pageName %>
+												<% if c[:childrens].length>0 %>
+												<b class="arrow icon-angle-down"></b>
+												<% end %>
+											</a>
+											<% if c[:childrens].length>0 %>
+												<%= eachChildrens(c)%>
+											<% end %>
+										</li>
+									<% end %>
+								</ul>
+							<%=''''%>
+							<% end %><!-- #此处加入空值为了服务器能不重复两个end之间的静态值 -->
+								<% if p[:childrens].length>0 %>
+									<%= eachChildrens(p)%>
 								<% end %>
-							</ul>
-							<% end %>
 						</li>
 					<% end %>
 						<li class="active">
