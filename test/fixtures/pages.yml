@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pageName: MyString
+  fid: 1
+  sort: 1
+  topLevel: 1
+  icon: MyText
+  linkUrl: MyText
+  description: MyText
+
+two:
+  pageName: MyString
+  fid: 1
+  sort: 1
+  topLevel: 1
+  icon: MyText
+  linkUrl: MyText
+  description: MyText

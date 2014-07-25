@@ -1,6 +1,6 @@
 class ChannelsController < ManageController
   before_action :set_channel, only: [:show, :edit, :update, :destroy]
-
+  before_action :getPages
   # GET /channels
   # GET /channels.json
   def index

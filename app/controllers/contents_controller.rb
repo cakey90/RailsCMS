@@ -1,5 +1,6 @@
 class ContentsController < ManageController
   before_action :set_content, only: [:show, :edit, :update, :destroy]
+  before_action :getPages
 
   # GET /contents
   # GET /contents.json

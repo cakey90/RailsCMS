@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724075037) do
+ActiveRecord::Schema.define(version: 20140725035530) do
 
   create_table "channels", force: true do |t|
     t.string   "channelName"
@@ -53,6 +53,18 @@ ActiveRecord::Schema.define(version: 20140724075037) do
     t.integer  "iftop"
     t.integer  "sort"
     t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", force: true do |t|
+    t.string   "pageName"
+    t.integer  "fid"
+    t.integer  "sort"
+    t.integer  "topLevel"
+    t.text     "icon"
+    t.text     "linkUrl"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
